@@ -1,129 +1,150 @@
+/* Variaveis  */
+:root {
+    --verde-principal: #00ff08;
+}
 
 /* ESTILOS GERAIS  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background-color: #000;
     height: 100vh;
 }
-.interface{
+
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
-.flex{
+
+.flex {
     display: flex;
 }
-.bt-contato button{
+
+.bt-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00ff08;
+    background-color: var(--verde-principal);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    transition: .2s ;
+    transition: .2s;
 
 }
-h2.titulo{
+
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
-   color: #00ff08;
-   
+h2.titulo span {
+    color: var(--verde-principal);
+
 }
-button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px var(--verde-principal);
     transform: scale(1.05);
 }
+
 /* ESTILO DO CABEÇALHO */
-header{
+header {
     padding: 40px 4%;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
+
 header a {
     color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
+
 header a:hover {
     color: #fff;
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
-header nav ul{
-   list-style-type: none;
+
+header nav ul {
+    list-style-type: none;
 }
-header nav ul li{
+
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
 /* ESTILO DO TOPO DO SITE */
-section .topo-site{
+section .topo-site {
     padding: 40px 4%;
 
 }
-section.topo-site .flex{
-  
+
+section.topo-site .flex {
+
     align-items: center;
     justify-content: center;
     gap: 90px;
-    
+
 }
-.topo-site h1{
+
+.topo-site h1 {
     color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
-.topo-site .txt-topo-site h1 span{
-    color: #00ff08;
+.topo-site .txt-topo-site h1 span {
+    color: var(--verde-principal);
 }
 
-.txt-topo-site, .topo-site p{
+.txt-topo-site,
+.topo-site p {
     color: #fff;
     margin: 40px 0px;
 
 }
-.topo-site .img-topo-site img{
+
+.topo-site .img-topo-site img {
     position: relative;
     border-radius: 70px;
-    animation:  flutuar 2s ease-in-out infinite alternate;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
-    0%{
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* ESTILO DAS ESPECIALIDADES */
 
-section.especialidades{
+section.especialidades {
     padding: 40px 4%;
 }
-section.especialidades .flex{
+
+section.especialidades .flex {
     gap: 60px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
@@ -131,73 +152,84 @@ section.especialidades .flex{
     transition: .2s;
     cursor: pointer;
 }
-.especialidades .especialidades-box:hover{
+
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
 }
 
-.especialidades .especialidades-box i{
+.especialidades .especialidades-box i {
     font-size: 70px;
-    color: #00ff08;
+    color: var(--verde-principal);
 
 }
-.especialidades .especialidades-box h3{
+
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 
 }
 
 /* ESTILO DO SOBRE */
-section.sobre{
+section.sobre {
     padding: 80px 4%;
 }
-section.sobre .flex{
+
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
-.sobre .txt-sobre{
+
+.sobre .txt-sobre {
     color: #fff;
 
 }
-.sobre .txt-sobre h2{
+
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 
 }
-.sobre .txt-sobre h2 span{
-    color: #00ff08;
+
+.sobre .txt-sobre h2 span {
+    color: var(--verde-principal);
     display: block;
 
 }
-.sobre .txt-sobre p{
+
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
-.btn-social button{
+
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00ff08;
+    background-color: var(--verde-principal);
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
 }
+
 /* ESTILO DO PORTIFOLIO */
-section.portifolio{
+section.portifolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
-section.portifolio .flex{
+
+section.portifolio .flex {
     justify-content: space-around;
     margin-top: 50px;
 }
-.img-port{
+
+.img-port {
     width: 360px;
     height: 460px;
-    background-color: #00ff08;
+    background-color: var(--verde-principal);
     background-image: url(/imagens/imagem.jpg);
     background-size: cover;
     background-position: 100% 10%;
@@ -207,11 +239,13 @@ section.portifolio .flex{
     position: relative;
 
 }
-.img-port:hover{
+
+.img-port:hover {
     background-position: 100% 100%;
-    
+
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -228,15 +262,18 @@ section.portifolio .flex{
     opacity: 0;
     transition: .5s;
 }
-.overlay:hover{
+
+.overlay:hover {
     opacity: 1;
 }
+
 /* ESTILO DO FORMULARIO DE CONTATO */
-section.formulario{
+section.formulario {
     padding: 80px 4%;
 
 }
-form{
+
+form {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -245,7 +282,9 @@ form{
     gap: 10px;
     margin-top: 50px;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
     background-color: #242424;
     border: 0;
@@ -256,50 +295,60 @@ form input, form textarea{
     font-size: 18px;
 
 }
+
 /* form input::placeholder{
-    color: #00ff08;
+    color: var(--verde-principal);
 } */
-form textarea{
+form textarea {
     resize: none;
     max-height: 200px;
 }
-form .btn-enviar{
+
+form .btn-enviar {
     margin-top: 20px;
     text-align: center;
 }
-form .btn-enviar input{
+
+form .btn-enviar input {
     width: 120px;
-    background-color: #00ff08;
+    background-color: var(--verde-principal);
     color: #000;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
 
 }
+
 /* ESTILO DO RODAPE */
-footer{
+footer {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
-footer .flex{
-     justify-content: space-between;
+
+footer .flex {
+    justify-content: space-between;
 }
-footer .line-footer{
+
+footer .line-footer {
     padding: 20px 0;
 
 }
-.borda{
-    border-top: 2px solid #00ff08;
+
+.borda {
+    border-top: 2px solid var(--verde-principal);
 }
-footer .line-footer p i{
-    color: #00ff08;
+
+footer .line-footer p i {
+    color: var(--verde-principal);
     font-size: 22px;
 }
-footer .line-footer p a{
+
+footer .line-footer p a {
     color: #fff;
 }
-.logo-footer p{
+
+.logo-footer p {
     color: #fff;
-    
+
 
 }
