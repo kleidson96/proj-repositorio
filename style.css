@@ -134,17 +134,17 @@ section.topo-site .flex {
     }
 }
 
-/* ESTILO DAS ESPECIALIDADES */
+/* ESTILO DAS habilidades */
 
-section.especialidades {
+section.habilidades {
     padding: 40px 4%;
 }
 
-section.especialidades .flex {
+section.habilidades .flex {
     gap: 40px;
 }
 
-.especialidades .especialidades-box {
+.habilidades .habilidades-box {
     color: #fff;
     padding: 20px;
     border-radius: 20px;
@@ -153,18 +153,18 @@ section.especialidades .flex {
     cursor: pointer;
 }
 
-.especialidades .especialidades-box:hover {
+.habilidades .habilidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
 }
 
-.especialidades .especialidades-box i {
+.habilidades .habilidades-box i {
     font-size: 70px;
     color: var(--verde-principal);
 
 }
 
-.especialidades .especialidades-box h3 {
+.habilidades .habilidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 
