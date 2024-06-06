@@ -141,14 +141,14 @@ section.especialidades {
 }
 
 section.especialidades .flex {
-    gap: 60px;
+    gap: 40px;
 }
 
 .especialidades .especialidades-box {
     color: #fff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
     transition: .2s;
     cursor: pointer;
 }
@@ -169,6 +169,7 @@ section.especialidades .flex {
     margin: 15px 0;
 
 }
+
 
 /* ESTILO DO SOBRE */
 section.sobre {
