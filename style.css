@@ -215,7 +215,9 @@ section.sobre .flex {
     margin: 0 5px;
     transition: .2s;
 }
-
+.sobre .img-sobre img{
+    border-radius: 30px;
+}
 /* ESTILO DO PORTIFOLIO */
 section.portifolio {
     padding: 80px 4%;
