@@ -297,7 +297,6 @@ section.portifolio .flex {
 .img-port {
     width: 360px;
     height: 460px;
-    /* background-color: var(--verde-principal); */
     background-image: url("/imagens/imagem2.jpg");
     background-size: cover;
     background-position: 100% 10%;
