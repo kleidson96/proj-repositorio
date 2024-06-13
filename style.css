@@ -444,8 +444,17 @@ footer .line-footer p a {
     .menu-desktop, .bt-contato {
         display: none;
     }
+    body{
+        padding-top: 0px;
+    }
+    header{
+
+        z-index: 0;
+        position: initial;
+    }
 
     /* TOPO DO SITE */
+   
     section.topo-site .flex {
         gap: 40px;
     }
